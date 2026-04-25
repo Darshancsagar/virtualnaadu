@@ -19,6 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="charset" content="UTF-8" />
         <meta name="language" content="English" />
+        <meta name="google-site-verification" content="LvDheSWSRWD8zobm_SNg4V6LjkwuLm0XgMUNpjuMcq8" />
         <meta property="og:title" content="Top Tourist Places in Malenadu | Virtual Naadu" />
         <meta
           property="og:description"
