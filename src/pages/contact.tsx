@@ -1,12 +1,18 @@
 import Head from "next/head";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Container, Box, Typography, TextField, Button, Card, CardContent, Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Email, LocationOn, Send } from "@mui/icons-material";
+import { breadcrumbSchema } from "@/utils/schemas";
 
 export default function Contact() {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.virtualnaadu.com" },
+    { name: "Contact", url: "https://www.virtualnaadu.com/contact" },
+  ]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,6 +41,11 @@ export default function Contact() {
     <>
       <Head>
         <title>Contact Us | Virtual Naadu - Malenadu Tourism Information</title>
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+        />
         <meta
           name="description"
           content="Contact Virtual Naadu for tourism information about Malenadu, travel guides, and inquiries about places to visit in Karnataka's Western Ghats."

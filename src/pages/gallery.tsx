@@ -1,15 +1,40 @@
 import Head from "next/head";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Container, Box, Typography, Grid, Card, CardMedia, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { imageGallery } from "@/data/imageGallery";
+import { collectionPageSchema, breadcrumbSchema } from "@/utils/schemas";
 
 export default function Gallery() {
+  const collectionSchema = collectionPageSchema({
+    name: "Malenadu Photo Gallery",
+    description: "Browse stunning photo gallery of Malenadu - beautiful waterfalls, scenic viewpoints, temples, and natural landscapes.",
+    url: "https://www.virtualnaadu.com/gallery",
+    image: "https://www.virtualnaadu.com/images/gallery-cover.jpg",
+    numberOfItems: imageGallery.length,
+  });
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.virtualnaadu.com" },
+    { name: "Gallery", url: "https://www.virtualnaadu.com/gallery" },
+  ]);
+
   return (
     <>
       <Head>
         <title>Gallery | Malenadu Photo Collection | Virtual Naadu</title>
+        <Script
+          id="collection-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+        />
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+        />
         <meta
           name="description"
           content="Browse stunning photo gallery of Malenadu - beautiful waterfalls, scenic viewpoints, temples, and natural landscapes from the Western Ghats."

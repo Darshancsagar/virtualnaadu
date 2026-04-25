@@ -1,13 +1,34 @@
 import Head from "next/head";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import HomePage from "@/components/HomePage";
 import Footer from "@/components/Footer";
+import { organizationSchema, localBusinessSchema, breadcrumbSchema } from "@/utils/schemas";
 
 export default function Home() {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.virtualnaadu.com" },
+  ]);
+
   return (
     <>
       <Head>
         <title>Top Tourist Places in Malenadu | Virtual Naadu</title>
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+        />
         <meta name="google-site-verification" content="Re11hYAbsP5ClYwY4cVhtQYREcF7Eni7oodXbgiqfRo" />
         <meta
           name="description"

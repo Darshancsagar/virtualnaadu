@@ -1,16 +1,41 @@
 import Head from "next/head";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Container, Box, Typography, Grid, Card, CardContent, CardMedia, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { topPlacesToVisit } from "@/data/topPlacesToVisit";
 import Link from "next/link";
+import { collectionPageSchema, breadcrumbSchema } from "@/utils/schemas";
 
 export default function Places() {
+  const collectionSchema = collectionPageSchema({
+    name: "Tourist Places in Malenadu",
+    description: "Explore top 13 tourist places in Malenadu including Jog Falls, Coorg, Chikmagalur, Kudremukh, and more.",
+    url: "https://www.virtualnaadu.com/places",
+    image: "https://www.virtualnaadu.com/images/malenadu-places.jpg",
+    numberOfItems: topPlacesToVisit.length,
+  });
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.virtualnaadu.com" },
+    { name: "Places", url: "https://www.virtualnaadu.com/places" },
+  ]);
+
   return (
     <>
       <Head>
         <title>Places to Visit in Malenadu | Virtual Naadu - Tourist Destinations</title>
+        <Script
+          id="collection-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+        />
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+        />
         <meta
           name="description"
           content="Explore top 13 tourist places in Malenadu - Jog Falls, Agumbe, Kudremukh, Coorg, Dandeli & more. Get detailed information, directions, and travel guides."

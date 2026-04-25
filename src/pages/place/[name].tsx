@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Script from "next/script";
 import {
   Box,
   Container,
@@ -14,6 +15,7 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { topPlacesToVisit } from "@/data/topPlacesToVisit";
+import { touristAttractionSchema, breadcrumbSchema } from "@/utils/schemas";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import DirectionsIcon from "@mui/icons-material/Directions";
@@ -59,6 +61,20 @@ export default function PlaceDetail() {
     activities: string;
   };
 
+  const touristSchema = touristAttractionSchema({
+    name: place.name,
+    description: place.description,
+    image: place.image,
+    location: detail.location,
+    url: `https://www.virtualnaadu.com/place/${place.name}`,
+  });
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://www.virtualnaadu.com" },
+    { name: "Places", url: "https://www.virtualnaadu.com/places" },
+    { name: place.name, url: `https://www.virtualnaadu.com/place/${place.name}` },
+  ]);
+
   const handleGetDirections = () => {
     const locationName = place.name.replace(/\s+/g, "+");
     const googleMapsUrl = `https://www.google.com/maps/search/${locationName}+Karnataka`;
@@ -69,6 +85,16 @@ export default function PlaceDetail() {
     <>
       <Head>
         <title>{place.name} - Top Tourist Destination in Malenadu | Virtual Naadu</title>
+        <Script
+          id="tourist-attraction-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(touristSchema) }}
+        />
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+        />
         <meta
           name="description"
           content={`${place.description} Explore attractions, best time to visit, how to reach, activities and accommodation options for ${place.name}.`}
