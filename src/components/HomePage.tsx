@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Box,
   Button,
@@ -11,9 +12,12 @@ import {
   CardContent,
   Chip,
   Divider,
+  TextField,
+  InputAdornment,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { topPlacesToVisit } from "@/data/topPlacesToVisit";
 import { imageGallery } from "@/data/imageGallery";
 import EastIcon from "@mui/icons-material/East";
@@ -21,8 +25,36 @@ import ExploreIcon from "@mui/icons-material/Explore";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
 import LandscapeIcon from "@mui/icons-material/Landscape";
 import ImageIcon from "@mui/icons-material/Image";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default function HomePage() {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const popularTags = [
+    { label: "Waterfalls", tag: "waterfalls" },
+    { label: "Temples", tag: "temples" },
+    { label: "Trekking", tag: "trekking" },
+    { label: "Adventure", tag: "adventure" },
+    { label: "Coffee", tag: "coffee" },
+    { label: "Nature", tag: "nature" },
+  ];
+
+  const handleSearch = (searchTerm = searchQuery) => {
+    if (searchTerm.trim()) {
+      router.push(`/places?search=${encodeURIComponent(searchTerm)}`);
+    }
+  };
+
+  const handleTagClick = (tag) => {
+    router.push(`/places?tag=${encodeURIComponent(tag)}`);
+  };
+
+  const handleSearchKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
   return (
     <Box className="bg-gradient-to-b from-orange-50 via-white to-green-50 min-h-screen">
       {/* Hero Section */}
@@ -158,6 +190,126 @@ export default function HomePage() {
           </Typography>
           <Box className="text-2xl">⬇️</Box>
         </motion.div>
+      </Box>
+
+      {/* Search Bar Section */}
+      <Box className="bg-gradient-to-b from-white to-gray-50 py-12 relative -mt-8 z-20">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <Box className="max-w-2xl mx-auto">
+              <Typography
+                variant="h5"
+                className="font-bold text-center text-gray-800 mb-6"
+              >
+                Find Your Perfect Destination
+              </Typography>
+              
+              <Box className="flex gap-2 mb-6">
+                <TextField
+                  fullWidth
+                  placeholder="Search Places..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyPress={handleSearchKeyPress}
+                  variant="outlined"
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      backgroundColor: "white",
+                      borderRadius: "12px",
+                      fontSize: "16px",
+                      "& fieldset": {
+                        borderColor: "#E0E0E0",
+                        borderWidth: "2px",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "#EF6C00",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "#EF6C00",
+                        borderWidth: "2px",
+                      },
+                    },
+                    "& .MuiOutlinedInput-input": {
+                      padding: "16px",
+                    },
+                  }}
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <SearchIcon sx={{ color: "#EF6C00", fontSize: 28 }} />
+                      </InputAdornment>
+                    ),
+                  }}
+                />
+                <Button
+                  variant="contained"
+                  onClick={() => handleSearch()}
+                  sx={{
+                    backgroundColor: "#EF6C00",
+                    color: "white",
+                    padding: "16px 32px",
+                    fontSize: "16px",
+                    fontWeight: 600,
+                    borderRadius: "12px",
+                    whiteSpace: "nowrap",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      backgroundColor: "#E65100",
+                      transform: "translateY(-2px)",
+                      boxShadow: "0 8px 20px rgba(230, 81, 0, 0.3)",
+                    },
+                  }}
+                >
+                  Search
+                </Button>
+              </Box>
+
+              {/* Popular Tags */}
+              <Box className="text-center">
+                <Typography
+                  variant="body2"
+                  className="text-gray-600 mb-3 font-medium"
+                >
+                  Popular Searches:
+                </Typography>
+                <Box className="flex flex-wrap gap-2 justify-center">
+                  {popularTags.map((item) => (
+                    <motion.div
+                      key={item.tag}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Chip
+                        label={item.label}
+                        onClick={() => handleTagClick(item.tag)}
+                        sx={{
+                          backgroundColor: "#FFF3E0",
+                          color: "#E65100",
+                          fontSize: "14px",
+                          fontWeight: 600,
+                          padding: "20px 8px",
+                          cursor: "pointer",
+                          transition: "all 0.3s ease",
+                          border: "1px solid #FFB74D",
+                          "&:hover": {
+                            backgroundColor: "#FFB74D",
+                            color: "white",
+                            transform: "translateY(-2px)",
+                            boxShadow: "0 6px 12px rgba(255, 167, 38, 0.3)",
+                          },
+                        }}
+                      />
+                    </motion.div>
+                  ))}
+                </Box>
+              </Box>
+            </Box>
+          </motion.div>
+        </Container>
       </Box>
 
       {/* About Section */}

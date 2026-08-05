@@ -1,14 +1,63 @@
 import Head from "next/head";
 import Script from "next/script";
+import { useRouter } from "next/router";
+import { useMemo } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Container, Box, Typography, Grid, Card, CardContent, CardMedia, Button } from "@mui/material";
+import { Container, Box, Typography, Grid, Card, CardContent, CardMedia, Button, Chip } from "@mui/material";
 import { motion } from "framer-motion";
 import { topPlacesToVisit } from "@/data/topPlacesToVisit";
 import Link from "next/link";
 import { collectionPageSchema, breadcrumbSchema } from "@/utils/schemas";
+import ClearIcon from "@mui/icons-material/Clear";
 
 export default function Places() {
+  const router = useRouter();
+  const { search, tag } = router.query;
+
+  const filteredPlaces = useMemo(() => {
+    let results = topPlacesToVisit;
+
+    if (search) {
+      const searchLower = String(search).toLowerCase();
+      const searchNormalized = searchLower.replace(/\s+/g, '');
+      
+      results = results.filter((place) => {
+        // Check with original search term
+        const matchName = place.name.toLowerCase().includes(searchLower);
+        const matchDesc = place.description.toLowerCase().includes(searchLower);
+        const matchKeywords =
+          place.searchKeywords &&
+          place.searchKeywords.some((keyword) =>
+            keyword.toLowerCase().includes(searchLower)
+          );
+        
+        // Check with normalized search term (spaces removed)
+        const matchNameNormalized = place.name.toLowerCase().replace(/\s+/g, '').includes(searchNormalized);
+        const matchDescNormalized = place.description.toLowerCase().replace(/\s+/g, '').includes(searchNormalized);
+        const matchKeywordsNormalized =
+          place.searchKeywords &&
+          place.searchKeywords.some((keyword) =>
+            keyword.toLowerCase().replace(/\s+/g, '').includes(searchNormalized)
+          );
+        
+        return matchName || matchDesc || matchKeywords || matchNameNormalized || matchDescNormalized || matchKeywordsNormalized;
+      });
+    }
+
+    if (tag) {
+      const tagLower = String(tag).toLowerCase();
+      results = results.filter(
+        (place) => place.tags && place.tags.some((t) => t.toLowerCase() === tagLower)
+      );
+    }
+
+    return results;
+  }, [search, tag]);
+
+  const clearFilters = () => {
+    router.push("/places");
+  };
   const collectionSchema = collectionPageSchema({
     name: "Tourist Places in Malenadu",
     description: "Explore top 13 tourist places in Malenadu including Jog Falls, Coorg, Chikmagalur, Kudremukh, and more.",
@@ -74,16 +123,82 @@ export default function Places() {
               🌿 Explore Places in Malenadu
             </Typography>
             <Typography variant="h6" className="text-center mx-auto">
-              Discover 13 spectacular destinations across Karnataka's Western Ghats region with detailed information, attractions, and travel guides.
+              {search || tag
+                ? `Showing ${filteredPlaces.length} place${filteredPlaces.length !== 1 ? "s" : ""} ${search ? `matching "${search}"` : `"${tag}" places`}`
+                : "Discover 13 spectacular destinations across Karnataka's Western Ghats region"}
             </Typography>
           </motion.div>
         </Container>
       </Box>
 
+      {/* Active Filters Display */}
+      {(search || tag) && (
+        <Box className="bg-orange-50 border-b-2 border-orange-200 py-4">
+          <Container>
+            <Box className="flex items-center justify-between gap-4 flex-wrap">
+              <Box className="flex items-center gap-2 flex-wrap">
+                <Typography className="text-gray-700 font-medium">Active Filters:</Typography>
+                {search && (
+                  <Chip
+                    label={`Search: ${search}`}
+                    onDelete={clearFilters}
+                    sx={{
+                      backgroundColor: "#FFB74D",
+                      color: "#E65100",
+                      fontWeight: 600,
+                    }}
+                  />
+                )}
+                {tag && (
+                  <Chip
+                    label={`Category: ${tag}`}
+                    onDelete={clearFilters}
+                    sx={{
+                      backgroundColor: "#FFB74D",
+                      color: "#E65100",
+                      fontWeight: 600,
+                    }}
+                  />
+                )}
+              </Box>
+              <Button
+                size="small"
+                startIcon={<ClearIcon />}
+                onClick={clearFilters}
+                sx={{
+                  color: "#2E7D32",
+                  fontWeight: 600,
+                  "&:hover": { backgroundColor: "#E8F5E9" },
+                }}
+              >
+                Clear All
+              </Button>
+            </Box>
+          </Container>
+        </Box>
+      )}
+
       {/* Places Grid */}
       <Container className="py-16">
-        <Grid container spacing={4}>
-          {topPlacesToVisit.map((place, index) => (
+        {filteredPlaces.length === 0 ? (
+          <Box className="text-center py-12">
+            <Typography variant="h5" className="text-gray-700 mb-4">
+              No places found matching your search
+            </Typography>
+            <Button
+              variant="contained"
+              onClick={clearFilters}
+              sx={{
+                backgroundColor: "#2E7D32",
+                "&:hover": { backgroundColor: "#1B5E20" },
+              }}
+            >
+              View All Places
+            </Button>
+          </Box>
+        ) : (
+          <Grid container spacing={4}>
+            {filteredPlaces.map((place, index) => (
             <Grid item xs={12} sm={6} md={4} key={place.name}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -149,8 +264,9 @@ export default function Places() {
                 </Link>
               </motion.div>
             </Grid>
-          ))}
-        </Grid>
+            ))}
+          </Grid>
+        )}
       </Container>
 
       <Footer />

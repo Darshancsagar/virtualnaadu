@@ -3,6 +3,9 @@ export const topPlacesToVisit = [
     name: "Jog Falls",
     description: "One of the highest plunge waterfalls in India, cascading from a height of 830 feet (253 meters).",
     image: "/imageForProject/jog.png",
+    tags: ["waterfalls", "adventure", "trekking", "swimming"],
+    category: "waterfall",
+    searchKeywords: ["plunge", "cascade", "shimoga", "falls"],
     detail: {
       location: "Shimoga District, Karnataka (13.8376° N, 75.1503° E)",
       bestTimeToVisit: "June to October (monsoon season provides maximum water flow)",
@@ -23,6 +26,9 @@ export const topPlacesToVisit = [
     name: "Agumbe",
     description: "Known as the 'Cherrapunji of South India', famous for its rainforests and sunsets.",
     image: "https://images.unsplash.com/photo-1658822747008-c162f1c6d5ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWd1bWJlfGVufDB8fDB8fHww",
+    tags: ["waterfalls", "nature", "trekking", "sunset"],
+    category: "waterfall",
+    searchKeywords: ["rainforest", "sunset", "monsoon", "shimoga"],
     detail: {
       location: "Shimoga District, Karnataka (14.5033° N, 75.1003° E)",
       bestTimeToVisit: "June to September (monsoon season brings scenic beauty and lush greenery)",
@@ -43,6 +49,9 @@ export const topPlacesToVisit = [
     name: "Ikkeri",
     description: "Home to the magnificent Ikkeri Aghoreshwara Temple, an architectural gem and former capital of the Keladi Nayakas in Shimoga.",
     image: "/imageForProject/Ikkeri.png",
+    tags: ["temples", "history", "culture", "architecture"],
+    category: "temple",
+    searchKeywords: ["aghoreshwara", "nayaka", "shrine", "shimoga"],
     detail: {
       location: "Shimoga District, Karnataka (14.1664° N, 75.3833° E)",
       bestTimeToVisit: "October to March (pleasant weather for temple visits)",
@@ -63,6 +72,9 @@ export const topPlacesToVisit = [
     name: "Varadhalli",
     description: "A scenic mountain village in Shimoga known for its natural beauty and trekking trails.",
     image: "/imageForProject/vardhahalli.png",
+    tags: ["trekking", "nature", "mountains", "adventure"],
+    category: "trekking",
+    searchKeywords: ["mountain", "trek", "trail", "village"],
     detail: {
       location: "Shimoga District, Karnataka (14.2667° N, 75.2333° E)",
       bestTimeToVisit: "October to May (cool weather, ideal for trekking)",
@@ -83,6 +95,9 @@ export const topPlacesToVisit = [
     name: "Sigandur",
     description: "A scenic riverside village on Sharavathi River banks with ancient temples, now easily accessible via newly constructed bridge.",
     image: "/imageForProject/sigandhur.png",
+    tags: ["temples", "history", "riverside", "culture"],
+    category: "temple",
+    searchKeywords: ["sharavathi", "river", "ancient", "pilgrimage"],
     detail: {
       location: "Shimoga District, Karnataka (14.0667° N, 75.2833° E)",
       bestTimeToVisit: "October to March (pleasant weather for temple visits and riverside exploration)",
@@ -103,6 +118,9 @@ export const topPlacesToVisit = [
     name: "Sagara",
     description: "An important town in Shimoga region, gateway to many Western Ghats attractions.",
     image: "/imageForProject/sagara.png",
+    tags: ["temples", "nature", "culture", "shopping"],
+    category: "town",
+    searchKeywords: ["gateway", "market", "estates", "shimoga"],
     detail: {
       location: "Shimoga District, Karnataka (14.1000° N, 75.2167° E)",
       bestTimeToVisit: "October to March (ideal weather)",
@@ -123,6 +141,9 @@ export const topPlacesToVisit = [
     name: "Shimoga City",
     description: "The cultural heart of Malenadu, famous for temples, culture, and gateway to Western Ghats.",
     image: "/imageForProject/shivamoga.png",
+    tags: ["temples", "culture", "shopping", "city"],
+    category: "city",
+    searchKeywords: ["ramakrishna", "cultural", "river", "gateway"],
     detail: {
       location: "Shimoga District, Karnataka (13.9299° N, 75.5681° E)",
       bestTimeToVisit: "October to March (pleasant weather for sightseeing)",
@@ -143,6 +164,9 @@ export const topPlacesToVisit = [
     name: "Kudremukh",
     description: "A scenic mountain range in the Western Ghats perfect for trekking and wildlife enthusiasts.",
     image: "https://plus.unsplash.com/premium_photo-1676496046182-356a6a0ed002?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlfGVufDB8fDB8fHww",
+    tags: ["trekking", "mountains", "wildlife", "adventure"],
+    category: "trekking",
+    searchKeywords: ["peak", "trek", "national park", "wildlife"],
     detail: {
       location: "Chikmagalur & Dakshina Kannada Districts, Karnataka (13.3667° N, 75.6833° E)",
       bestTimeToVisit: "October to May (dry season ideal for trekking)",
@@ -163,6 +187,9 @@ export const topPlacesToVisit = [
     name: "Sringeri",
     description: "A sacred town on the banks of River Tunga, known for its ancient temples and spiritual vibes.",
     image: "https://images.unsplash.com/photo-1617348088387-3f19aad2582b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3Jpbmdlcml8ZW58MHx8MHx8fDA%3D",
+    tags: ["temples", "spiritual", "meditation", "history"],
+    category: "temple",
+    searchKeywords: ["sharadamba", "vidyashankara", "spiritual", "tunga"],
     detail: {
       location: "Chikmagalur District, Karnataka (13.3667° N, 75.5333° E)",
       bestTimeToVisit: "October to March (pleasant weather, ideal for spiritual visits)",
@@ -183,6 +210,9 @@ export const topPlacesToVisit = [
     name: "Chikmagalur",
     description: "Coffee land of Karnataka, filled with hills, estates, and pleasant weather.",
     image: "https://images.unsplash.com/photo-1549777703-adec19d2e8a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNoaWtrYW1hZ2FsdXJ8ZW58MHx8MHx8fDA%3D",
+    tags: ["coffee", "trekking", "nature", "plantations"],
+    category: "hill_station",
+    searchKeywords: ["coffee", "estate", "mullayanagiri", "plantations"],
     detail: {
       location: "Chikmagalur District, Karnataka (13.3167° N, 75.7667° E)",
       bestTimeToVisit: "October to March (cool weather and harvest season)",
@@ -203,6 +233,9 @@ export const topPlacesToVisit = [
     name: "Baba Budangiri",
     description: "A mystical mountain peak in Chikmagalur known for its caves and spiritual legends.",
     image: "https://images.unsplash.com/photo-1628059474508-7f2bc2e25e7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hpa2thbWFnYWx1ciUyMG1vdW50YWlufGVufDB8fDB8fHww",
+    tags: ["trekking", "spiritual", "mountains", "adventure"],
+    category: "mountain",
+    searchKeywords: ["caves", "sufi", "coffee", "peak"],
     detail: {
       location: "Chikmagalur District, Karnataka (13.4333° N, 75.7500° E)",
       bestTimeToVisit: "October to March (weather suitable for trekking and exploration)",
@@ -223,6 +256,9 @@ export const topPlacesToVisit = [
     name: "Hebbe Falls",
     description: "A hidden waterfall nestled in the coffee plantations of Kemmanagundi.",
     image: "https://images.unsplash.com/photo-1535392244477-7cb534eece28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhlYmJlJTIwZmFsbHN8ZW58MHx8MHx8fDA%3D",
+    tags: ["waterfalls", "trekking", "nature", "adventure"],
+    category: "waterfall",
+    searchKeywords: ["hidden", "cascade", "plantation", "chikmagalur"],
     detail: {
       location: "Chikmagalur District, Karnataka (13.4000° N, 75.7500° E)",
       bestTimeToVisit: "June to September (monsoon for maximum water flow), September to November (scenic beauty)",
@@ -243,6 +279,9 @@ export const topPlacesToVisit = [
     name: "Coorg (Kodagu)",
     description: "The 'Scotland of India', a picturesque hill station known for coffee, cardamom, and emerald landscapes.",
     image: "/imageForProject/coorg.png",
+    tags: ["coffee", "nature", "adventure", "trekking", "plantations"],
+    category: "hill_station",
+    searchKeywords: ["coffee", "cardamom", "abbey falls", "monsoon"],
     detail: {
       location: "Kodagu District, Karnataka (12.3381° N, 75.7304° E)",
       bestTimeToVisit: "September to April (cool weather, post-monsoon beauty ideal)",
@@ -263,6 +302,9 @@ export const topPlacesToVisit = [
     name: "Kemmanagundi",
     description: "A scenic hill station with beautiful gardens, viewpoints, and a perfect base for exploring the Western Ghats.",
     image: "/imageForProject/kemman.png",
+    tags: ["trekking", "nature", "mountains", "gardens"],
+    category: "hill_station",
+    searchKeywords: ["viewpoint", "sunset", "z-point", "gardens"],
     detail: {
       location: "Chikmagalur District, Karnataka (13.4033° N, 75.7333° E)",
       bestTimeToVisit: "October to March (ideal weather), June to September (monsoon beauty)",
@@ -283,6 +325,9 @@ export const topPlacesToVisit = [
     name: "Pushpagiri",
     description: "A scenic mountain peak in Chikmagalur offering challenging treks and panoramic views.",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdW50YWluJTIwcGVha3xlbnwwfHwwfHx8MA%3D%3D",
+    tags: ["trekking", "mountains", "adventure", "wildlife"],
+    category: "mountain",
+    searchKeywords: ["peak", "summit", "forest", "temple"],
     detail: {
       location: "Chikmagalur District, Karnataka (13.3667° N, 75.8000° E)",
       bestTimeToVisit: "October to May (dry season ideal for trekking)",
