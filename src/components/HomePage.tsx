@@ -46,11 +46,11 @@ export default function HomePage() {
     }
   };
 
-  const handleTagClick = (tag) => {
+  const handleTagClick = (tag: string) => {
     router.push(`/places?tag=${encodeURIComponent(tag)}`);
   };
 
-  const handleSearchKeyPress = (e) => {
+  const handleSearchKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
       handleSearch();
     }
