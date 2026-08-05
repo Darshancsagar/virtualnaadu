@@ -25,7 +25,7 @@ export default function Places() {
   return (
     <>
       <Head>
-        <title>Places to Visit in Malenadu | Virtual Naadu - Tourist Destinations</title>
+        <title>Places to Visit in Malenadu | Malenaadu - Tourist Destinations</title>
         <Script
           id="collection-schema"
           type="application/ld+json"
@@ -45,8 +45,8 @@ export default function Places() {
           content="places to visit Malenadu, tourist destinations Karnataka, Jog Falls, Coorg, Chikmagalur, Kudremukh, Agumbe, Dandeli, Hemavati, Nandi Hills, waterfalls in Karnataka"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Virtual Naadu" />
-        <meta property="og:title" content="Places to Visit in Malenadu | Virtual Naadu" />
+        <meta name="author" content="Malenaadu" />
+        <meta property="og:title" content="Places to Visit in Malenadu | Malenaadu" />
         <meta
           property="og:description"
           content="Discover 13 must-visit places in Malenadu region with detailed information about attractions, activities, and travel guides."

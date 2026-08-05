@@ -12,7 +12,12 @@ import {
   Chip,
   Paper,
   Divider,
+  Menu,
+  MenuItem,
+  Snackbar,
+  Alert,
 } from "@mui/material";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { topPlacesToVisit } from "@/data/topPlacesToVisit";
 import { touristAttractionSchema, breadcrumbSchema } from "@/utils/schemas";
@@ -26,10 +31,15 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import StarIcon from "@mui/icons-material/Star";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import RoomIcon from "@mui/icons-material/Room";
+import ShareIcon from "@mui/icons-material/Share";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 export default function PlaceDetail() {
   const router = useRouter();
   const { name } = router.query;
+  const [shareAnchorEl, setShareAnchorEl] = useState<null | HTMLElement>(null);
+  const [copySuccess, setCopySuccess] = useState(false);
+  const openShareMenu = Boolean(shareAnchorEl);
 
   const place = topPlacesToVisit.find((p) => p.name === name);
 
@@ -81,10 +91,47 @@ export default function PlaceDetail() {
     window.open(googleMapsUrl, "_blank");
   };
 
+  const handleShareClick = (event: React.MouseEvent<HTMLElement>) => {
+    setShareAnchorEl(event.currentTarget);
+  };
+
+  const handleShareClose = () => {
+    setShareAnchorEl(null);
+  };
+
+  const shareUrl = `https://www.virtualnaadu.com/place/${place.name}`;
+  const shareText = `Check out ${place.name} - ${place.description}. Visit Malenaadu for more info!`;
+
+  const handleShareToTwitter = () => {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`;
+    window.open(twitterUrl, "_blank");
+    handleShareClose();
+  };
+
+  const handleShareToFacebook = () => {
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+    window.open(facebookUrl, "_blank");
+    handleShareClose();
+  };
+
+  const handleShareToWhatsApp = () => {
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText + " " + shareUrl)}`;
+    window.open(whatsappUrl, "_blank");
+    handleShareClose();
+  };
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      setCopySuccess(true);
+      handleShareClose();
+      setTimeout(() => setCopySuccess(false), 2000);
+    });
+  };
+
   return (
     <>
       <Head>
-        <title>{place.name} - Top Tourist Destination in Malenadu | Virtual Naadu</title>
+        <title>{place.name} - Top Tourist Destination in Malenadu | Malenaadu</title>
         <Script
           id="tourist-attraction-schema"
           type="application/ld+json"
@@ -104,8 +151,8 @@ export default function PlaceDetail() {
           content={`${place.name}, tourist place, Malenadu, Karnataka, attraction, travel guide, accommodation, activities`}
         />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Virtual Naadu" />
-        <meta property="og:title" content={`${place.name} - Virtual Naadu`} />
+        <meta name="author" content="Malenaadu" />
+        <meta property="og:title" content={`${place.name} - Malenaadu`} />
         <meta
           property="og:description"
           content={`Discover ${place.name} - ${place.description}`}
@@ -209,6 +256,8 @@ export default function PlaceDetail() {
             </Button>
             <Button
               variant="outlined"
+              startIcon={<ShareIcon />}
+              onClick={handleShareClick}
               sx={{
                 borderColor: "#2E7D32",
                 color: "#2E7D32",
@@ -226,6 +275,36 @@ export default function PlaceDetail() {
             >
               Share
             </Button>
+            <Menu
+              anchorEl={shareAnchorEl}
+              open={openShareMenu}
+              onClose={handleShareClose}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "right",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+            >
+              <MenuItem onClick={handleShareToTwitter}>
+                <Box sx={{ mr: 2 }}>𝕏</Box>
+                Share on Twitter
+              </MenuItem>
+              <MenuItem onClick={handleShareToFacebook}>
+                <Box sx={{ mr: 2 }}>f</Box>
+                Share on Facebook
+              </MenuItem>
+              <MenuItem onClick={handleShareToWhatsApp}>
+                <Box sx={{ mr: 2 }}>💬</Box>
+                Share on WhatsApp
+              </MenuItem>
+              <MenuItem onClick={handleCopyLink}>
+                <ContentCopyIcon sx={{ mr: 2, fontSize: 20 }} />
+                Copy Link
+              </MenuItem>
+            </Menu>
           </Box>
         </motion.div>
       </Container>
@@ -776,6 +855,23 @@ export default function PlaceDetail() {
           </Grid>
         </Container>
       </Box>
+
+      {/* Copy Success Snackbar */}
+      <Snackbar
+        open={copySuccess}
+        autoHideDuration={2000}
+        onClose={() => setCopySuccess(false)}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert
+          onClose={() => setCopySuccess(false)}
+          severity="success"
+          sx={{ width: "100%" }}
+          icon={<ContentCopyIcon fontSize="inherit" />}
+        >
+          Link copied to clipboard!
+        </Alert>
+      </Snackbar>
     </Box>
     </>
   );

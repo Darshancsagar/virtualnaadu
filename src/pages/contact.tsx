@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact Us | Virtual Naadu - Malenadu Tourism Information</title>
+        <title>Contact Us | Malenaadu - Malenadu Tourism Information</title>
         <Script
           id="breadcrumb-schema"
           type="application/ld+json"
@@ -48,18 +48,18 @@ export default function Contact() {
         />
         <meta
           name="description"
-          content="Contact Virtual Naadu for tourism information about Malenadu, travel guides, and inquiries about places to visit in Karnataka's Western Ghats."
+          content="Contact Malenaadu for tourism information about Malenadu, travel guides, and inquiries about places to visit in Karnataka's Western Ghats."
         />
         <meta
           name="keywords"
-          content="contact Virtual Naadu, Malenadu tourism inquiry, Karnataka tourism information, travel assistance"
+          content="contact Malenaadu, Malenadu tourism inquiry, Karnataka tourism information, travel assistance"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Virtual Naadu" />
-        <meta property="og:title" content="Contact Us | Virtual Naadu" />
+        <meta name="author" content="Malenaadu" />
+        <meta property="og:title" content="Contact Us | Malenaadu" />
         <meta
           property="og:description"
-          content="Get in touch with Virtual Naadu for Malenadu tourism information and travel assistance."
+          content="Get in touch with Malenaadu for Malenadu tourism information and travel assistance."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.virtualnaadu.com/contact" />

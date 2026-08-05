@@ -3,9 +3,9 @@
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Virtual Naadu",
+  name: "Malenaadu",
   description:
-    "Virtual Naadu - Explore the hidden gems, waterfalls, temples, and scenic spots of Malenadu region in Karnataka.",
+    "Malenaadu - Explore the hidden gems, waterfalls, temples, and scenic spots of Malenadu region in Karnataka.",
   url: "https://www.virtualnaadu.com",
   logo: "https://www.virtualnaadu.com/logo.png",
   email: "everyinformation11@gmail.com",
@@ -15,7 +15,7 @@ export const organizationSchema = {
   },
   sameAs: [
     "https://www.facebook.com/virtualnaadu",
-    "https://www.instagram.com/virtualnaadu",
+    "https://www.instagram.com/malenaadu_info_adda?igsh=Zmlz0G5iNm9ueHRv",
     "https://www.twitter.com/virtualnaadu",
   ],
 };
@@ -23,7 +23,7 @@ export const organizationSchema = {
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Virtual Naadu",
+  name: "Malenaadu",
   description:
     "Tourism information and travel guides for Malenadu region with 13+ tourist destinations including waterfalls, hill stations, temples, and trekking spots.",
   image: "https://www.virtualnaadu.com/images/malenadu-tourism.jpg",
@@ -135,7 +135,7 @@ export const articleSchema = (article: {
   url: article.url,
   publisher: {
     "@type": "Organization",
-    name: "Virtual Naadu",
+    name: "Malenaadu",
     logo: {
       "@type": "ImageObject",
       url: "https://www.virtualnaadu.com/logo.png",

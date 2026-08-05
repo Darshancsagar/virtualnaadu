@@ -49,7 +49,7 @@ export default function Navbar() {
       }}
     >
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 3 }}>
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <Typography 
             variant="h6" 
             sx={{ 
@@ -58,7 +58,7 @@ export default function Navbar() {
               fontSize: "20px",
             }}
           >
-            🌿 Virtual Naadu
+            🌿 Malenaadu
           </Typography>
           <Box sx={{ backgroundColor: "rgba(255, 255, 255, 0.2)", px: 1.2, py: 0.5, borderRadius: 1, backdropFilter: "blur(10px)" }}>
             <Typography sx={{ fontSize: "10px", fontWeight: "600", color: "#FFB74D", textTransform: "uppercase", letterSpacing: "0.5px" }}>
@@ -119,7 +119,7 @@ export default function Navbar() {
 
       <Box sx={{ mt: 4, pt: 2, borderTop: "1px solid rgba(255,255,255,0.2)" }}>
         <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.7)" }}>
-          © 2026 Virtual Naadu. All rights reserved.
+          © 2026 Malenaadu. All rights reserved.
         </Typography>
       </Box>
     </Box>
@@ -179,7 +179,7 @@ export default function Navbar() {
                     letterSpacing: "0.5px",
                   }}
                 >
-                  Virtual Naadu
+                  Malenaadu
                 </Typography>
               </Box>
             </Link>

@@ -1,4 +1,4 @@
-# 🌿 Virtual Naadu - Quick Start Guide
+# 🌿 Malenaadu - Quick Start Guide
 
 ## Getting Started
 

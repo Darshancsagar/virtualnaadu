@@ -31,7 +31,7 @@ const Footer = () => {
             >
               <Box className="mb-4">
                 <Typography variant="h5" className="font-bold text-white mb-2 flex items-center gap-2">
-                  🌿 Virtual Naadu
+                  🌿 Malenaadu
                 </Typography>
                 <Typography variant="body2" className="text-gray-400 leading-relaxed">
                   Explore the beauty, culture, and nature of Malenadu virtually — one place at a time.
@@ -121,8 +121,8 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <Box className="text-center">
-            <Typography variant="body2" className="text-gray-500 text-sm">
-              © {currentYear} Virtual Naadu. All rights reserved. | Made with 🌿 & ✨ AI for Malenadu
+              <Typography variant="body2" className="text-gray-500 text-sm">
+              © {currentYear} Malenaadu. All rights reserved. | Made with 🌿 & ✨ AI for Malenadu
             </Typography>
           </Box>
         </motion.div>

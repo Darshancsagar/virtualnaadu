@@ -24,7 +24,7 @@ export default function Gallery() {
   return (
     <>
       <Head>
-        <title>Gallery | Malenadu Photo Collection | Virtual Naadu</title>
+        <title>Gallery | Malenadu Photo Collection | Malenaadu</title>
         <Script
           id="collection-schema"
           type="application/ld+json"
@@ -44,8 +44,8 @@ export default function Gallery() {
           content="Malenadu gallery, Karnataka waterfalls photos, scenic views, temple photography, Western Ghats images, nature photography"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Virtual Naadu" />
-        <meta property="og:title" content="Gallery | Malenadu Photo Collection | Virtual Naadu" />
+        <meta name="author" content="Malenaadu" />
+        <meta property="og:title" content="Gallery | Malenadu Photo Collection | Malenaadu" />
         <meta
           property="og:description"
           content="Explore stunning visual collection of tourist places and natural beauty in Malenadu region."

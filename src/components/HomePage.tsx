@@ -82,7 +82,7 @@ export default function HomePage() {
               variant="h2"
               className="font-bold mb-4 text-4xl sm:text-5xl md:text-7xl text-white drop-shadow-2xl leading-tight"
             >
-              Welcome to <span className="text-orange-300">Virtual Naadu</span>
+              Welcome to <span className="text-orange-300">Malenaadu</span>
             </Typography>
             <Typography
               variant="h6"
@@ -180,7 +180,7 @@ export default function HomePage() {
                 variant="h3"
                 className="font-bold text-orange-800 mb-4"
               >
-                About Virtual Naadu
+                About Malenaadu
               </Typography>
               <Divider sx={{ width: "100px", margin: "0 auto 20px", backgroundColor: "#EF6C00", height: 3 }} />
             </Box>
@@ -188,7 +188,7 @@ export default function HomePage() {
             <Typography
               className="text-center mx-auto text-gray-700 text-lg max-w-3xl leading-relaxed"
             >
-              Virtual Naadu is a comprehensive digital journey through the lush green landscapes,
+              Malenaadu is a comprehensive digital journey through the lush green landscapes,
               cascading waterfalls, pristine forests, and rich cultural heritage of the Malenadu region in
               Karnataka. Explore hidden gems, adventure trails, and spiritual destinations that define the
               beauty of the Western Ghats.
