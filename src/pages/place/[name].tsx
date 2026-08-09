@@ -33,6 +33,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import RoomIcon from "@mui/icons-material/Room";
 import ShareIcon from "@mui/icons-material/Share";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import WeatherCard from "@/components/WeatherCard";
 
 export default function PlaceDetail() {
   const router = useRouter();
@@ -414,6 +415,11 @@ export default function PlaceDetail() {
                 </motion.div>
               </Grid>
             </Grid>
+
+            <WeatherCard
+    lat={place.latitude}
+    lon={place.longitude}
+/> 
 
             {/* How to Reach */}
             <motion.div
