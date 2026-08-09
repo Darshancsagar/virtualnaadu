@@ -61,14 +61,14 @@ export default function Places() {
   const collectionSchema = collectionPageSchema({
     name: "Tourist Places in Malenadu",
     description: "Explore top 13 tourist places in Malenadu including Jog Falls, Coorg, Chikmagalur, Kudremukh, and more.",
-    url: "https://www.virtualnaadu.com/places",
-    image: "https://www.virtualnaadu.com/images/malenadu-places.jpg",
+    url: "https://www.malenaadu.in/places",
+    image: "https://www.malenaadu.in/images/malenadu-places.jpg",
     numberOfItems: topPlacesToVisit.length,
   });
 
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://www.virtualnaadu.com" },
-    { name: "Places", url: "https://www.virtualnaadu.com/places" },
+    { name: "Home", url: "https://www.malenaadu.in" },
+    { name: "Places", url: "https://www.malenaadu.in/places" },
   ]);
 
   return (
@@ -101,7 +101,7 @@ export default function Places() {
           content="Discover 13 must-visit places in Malenadu region with detailed information about attractions, activities, and travel guides."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.virtualnaadu.com/places" />
+        <meta property="og:url" content="https://www.malenaadu.in/places" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       {/* Hero Section */}

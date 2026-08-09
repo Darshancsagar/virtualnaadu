@@ -6,8 +6,8 @@ export const organizationSchema = {
   name: "Malenaadu",
   description:
     "Malenaadu - Explore the hidden gems, waterfalls, temples, and scenic spots of Malenadu region in Karnataka.",
-  url: "https://www.virtualnaadu.com",
-  logo: "https://www.virtualnaadu.com/logo.png",
+  url: "https://www.malenaadu.in",
+  logo: "https://www.malenaadu.in/logo.png",
   email: "everyinformation11@gmail.com",
   areaServed: {
     "@type": "place",
@@ -26,8 +26,8 @@ export const localBusinessSchema = {
   name: "Malenaadu",
   description:
     "Tourism information and travel guides for Malenadu region with 13+ tourist destinations including waterfalls, hill stations, temples, and trekking spots.",
-  image: "https://www.virtualnaadu.com/images/malenadu-tourism.jpg",
-  url: "https://www.virtualnaadu.com",
+  image: "https://www.malenaadu.in/images/malenadu-tourism.jpg",
+  url: "https://www.malenaadu.in",
   telephone: "+91-XXXXXXXXXX",
   email: "everyinformation11@gmail.com",
   address: {
@@ -138,7 +138,7 @@ export const articleSchema = (article: {
     name: "Malenaadu",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.virtualnaadu.com/logo.png",
+      url: "https://www.malenaadu.in/logo.png",
     },
   },
 });

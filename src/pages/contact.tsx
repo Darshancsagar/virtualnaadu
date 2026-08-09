@@ -10,8 +10,8 @@ import { breadcrumbSchema } from "@/utils/schemas";
 
 export default function Contact() {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://www.virtualnaadu.com" },
-    { name: "Contact", url: "https://www.virtualnaadu.com/contact" },
+    { name: "Home", url: "https://www.malenaadu.in" },
+    { name: "Contact", url: "https://www.malenaadu.in/contact" },
   ]);
   const [formData, setFormData] = useState({
     name: "",
@@ -62,7 +62,7 @@ export default function Contact() {
           content="Get in touch with Malenaadu for Malenadu tourism information and travel assistance."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.virtualnaadu.com/contact" />
+        <meta property="og:url" content="https://www.malenaadu.in/contact" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       {/* Hero Section */}

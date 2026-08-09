@@ -77,13 +77,13 @@ export default function PlaceDetail() {
     description: place.description,
     image: place.image,
     location: detail.location,
-    url: `https://www.virtualnaadu.com/place/${place.name}`,
+    url: `https://www.malenaadu.in/place/${place.name}`,
   });
 
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://www.virtualnaadu.com" },
-    { name: "Places", url: "https://www.virtualnaadu.com/places" },
-    { name: place.name, url: `https://www.virtualnaadu.com/place/${place.name}` },
+    { name: "Home", url: "https://www.malenaadu.in" },
+    { name: "Places", url: "https://www.malenaadu.in/places" },
+    { name: place.name, url: `https://www.malenaadu.in/place/${place.name}` },
   ]);
 
   const handleGetDirections = () => {
@@ -100,7 +100,7 @@ export default function PlaceDetail() {
     setShareAnchorEl(null);
   };
 
-  const shareUrl = `https://www.virtualnaadu.com/place/${place.name}`;
+  const shareUrl = `https://www.malenaadu.in/place/${place.name}`;
   const shareText = `Check out ${place.name} - ${place.description}. Visit Malenaadu for more info!`;
 
   const handleShareToTwitter = () => {
@@ -159,7 +159,7 @@ export default function PlaceDetail() {
           content={`Discover ${place.name} - ${place.description}`}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://www.virtualnaadu.com/place/${place.name}`} />
+        <meta property="og:url" content={`https://www.malenaadu.in/place/${place.name}`} />
         <meta property="og:image" content={place.image} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

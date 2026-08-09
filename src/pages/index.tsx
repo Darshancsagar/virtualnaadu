@@ -7,7 +7,7 @@ import { organizationSchema, localBusinessSchema, breadcrumbSchema } from "@/uti
 
 export default function Home() {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://www.virtualnaadu.com" },
+    { name: "Home", url: "https://www.malenaadu.in" },
   ]);
 
   return (
@@ -47,7 +47,7 @@ export default function Home() {
           content="Discover unexplored tourist spots in the Malenadu region including waterfalls, hills, and cultural sites with detailed travel information."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.virtualnaadu.com" />
+        <meta property="og:url" content="https://www.malenaadu.in" />
         <meta property="og:image" content="/images/malenadu-og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Top Tourist Places in Malenadu | Malenaadu" />

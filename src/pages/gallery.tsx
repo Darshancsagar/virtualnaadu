@@ -11,14 +11,14 @@ export default function Gallery() {
   const collectionSchema = collectionPageSchema({
     name: "Malenadu Photo Gallery",
     description: "Browse stunning photo gallery of Malenadu - beautiful waterfalls, scenic viewpoints, temples, and natural landscapes.",
-    url: "https://www.virtualnaadu.com/gallery",
-    image: "https://www.virtualnaadu.com/images/gallery-cover.jpg",
+    url: "https://www.malenaadu.in/gallery",
+    image: "https://www.malenaadu.in/images/gallery-cover.jpg",
     numberOfItems: imageGallery.length,
   });
 
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://www.virtualnaadu.com" },
-    { name: "Gallery", url: "https://www.virtualnaadu.com/gallery" },
+    { name: "Home", url: "https://www.malenaadu.in" },
+    { name: "Gallery", url: "https://www.malenaadu.in/gallery" },
   ]);
 
   return (
@@ -51,7 +51,7 @@ export default function Gallery() {
           content="Explore stunning visual collection of tourist places and natural beauty in Malenadu region."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.virtualnaadu.com/gallery" />
+        <meta property="og:url" content="https://www.malenaadu.in/gallery" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
