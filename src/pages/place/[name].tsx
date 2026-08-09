@@ -41,8 +41,8 @@ export default function PlaceDetail() {
   const [shareAnchorEl, setShareAnchorEl] = useState<null | HTMLElement>(null);
   const [copySuccess, setCopySuccess] = useState(false);
   const openShareMenu = Boolean(shareAnchorEl);
-
-  const place = topPlacesToVisit.find((p) => p.name === name);
+const decodedName = decodeURIComponent(name as string);
+  const place = topPlacesToVisit.find((p) => p.name === decodedName);
 
   if (!place) {
     return (
