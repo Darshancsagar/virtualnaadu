@@ -100,7 +100,7 @@ export default function PlaceDetail() {
     setShareAnchorEl(null);
   };
 
-  const shareUrl = `https://www.malenaadu.in/place/${place.name}`;
+  const shareUrl = `https://www.malenaadu.in/place/${encodeURIComponent(place.name)}`;
   const shareText = `Check out ${place.name} - ${place.description}. Visit Malenaadu for more info!`;
 
   const handleShareToTwitter = () => {
