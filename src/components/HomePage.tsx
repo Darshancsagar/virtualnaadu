@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import {
   Box,
   Button,
@@ -26,6 +27,15 @@ import LocalActivityIcon from "@mui/icons-material/LocalActivity";
 import LandscapeIcon from "@mui/icons-material/Landscape";
 import ImageIcon from "@mui/icons-material/Image";
 import SearchIcon from "@mui/icons-material/Search";
+
+const MapSection = dynamic(() => import("@/components/MapSection"), {
+  ssr: false,
+  loading: () => (
+    <Box className="py-16 text-center text-gray-500">
+      Loading map...
+    </Box>
+  ),
+});
 
 export default function HomePage() {
   const router = useRouter();
@@ -67,7 +77,6 @@ export default function HomePage() {
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1530973954043-dc7f4d22117c?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-          backgroundAttachment: "fixed",
         }}
       >
         {/* Animated Overlay */}
@@ -311,6 +320,9 @@ export default function HomePage() {
           </motion.div>
         </Container>
       </Box>
+
+      {/* Map Section */}
+      <MapSection places={topPlacesToVisit} />
 
       {/* About Section */}
       <Box className="py-20 bg-white relative overflow-hidden">

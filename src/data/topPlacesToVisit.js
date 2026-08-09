@@ -6,8 +6,10 @@ export const topPlacesToVisit = [
     tags: ["waterfalls", "adventure", "trekking", "swimming"],
     category: "waterfall",
     searchKeywords: ["plunge", "cascade", "shimoga", "falls"],
+    latitude: 14.2294,
+longitude: 74.8058,
     detail: {
-      location: "Shimoga District, Karnataka (13.8376° N, 75.1503° E)",
+      location: "Shimoga District, Karnataka ",
       bestTimeToVisit: "June to October (monsoon season provides maximum water flow)",
       howToReach: "Nearest railway station: Shimoga Junction (66 km). Bus: Regular services from Bangalore, Shimoga, and Mangalore. Road: Well-connected by NH highways.",
       highlights: [
@@ -29,8 +31,10 @@ export const topPlacesToVisit = [
     tags: ["waterfalls", "nature", "trekking", "sunset"],
     category: "waterfall",
     searchKeywords: ["rainforest", "sunset", "monsoon", "shimoga"],
+    latitude: 13.5092,
+longitude: 75.0903,
     detail: {
-      location: "Shimoga District, Karnataka (14.5033° N, 75.1003° E)",
+      location: "Shimoga District, Karnataka",
       bestTimeToVisit: "June to September (monsoon season brings scenic beauty and lush greenery)",
       howToReach: "Nearest railway: Shimoga (50 km). Bus: Services from Bangalore, Mangalore, and Shimoga. Road: Via Thirthahalli or Tarikere routes.",
       highlights: [
@@ -52,8 +56,10 @@ export const topPlacesToVisit = [
     tags: ["temples", "history", "culture", "architecture"],
     category: "temple",
     searchKeywords: ["aghoreshwara", "nayaka", "shrine", "shimoga"],
+    latitude: 14.1352,
+longitude: 75.0226,
     detail: {
-      location: "Shimoga District, Karnataka (14.1664° N, 75.3833° E)",
+      location: "Shimoga District, Karnataka ",
       bestTimeToVisit: "October to March (pleasant weather for temple visits)",
       howToReach: "Nearest railway: Shimoga (45 km). Bus: Regular services from Shimoga and nearby towns. Road: Well-connected via state highways.",
       highlights: [
@@ -75,8 +81,10 @@ export const topPlacesToVisit = [
     tags: ["trekking", "nature", "mountains", "adventure"],
     category: "trekking",
     searchKeywords: ["mountain", "trek", "trail", "village"],
+    latitude: 14.1164,
+longitude: 74.9816,
     detail: {
-      location: "Shimoga District, Karnataka (14.2667° N, 75.2333° E)",
+      location: "Shimoga District, Karnataka ",
       bestTimeToVisit: "October to May (cool weather, ideal for trekking)",
       howToReach: "Nearest railway: Shimoga (60 km). Bus: Services from Shimoga and nearby towns. Road: Via Thirthahalli or scenic ghat roads.",
       highlights: [
@@ -98,8 +106,10 @@ export const topPlacesToVisit = [
     tags: ["temples", "history", "riverside", "culture"],
     category: "temple",
     searchKeywords: ["sharavathi", "river", "ancient", "pilgrimage"],
+    latitude: 14.1949,
+longitude: 74.8478,
     detail: {
-      location: "Shimoga District, Karnataka (14.0667° N, 75.2833° E)",
+      location: "Shimoga District, Karnataka ",
       bestTimeToVisit: "October to March (pleasant weather for temple visits and riverside exploration)",
       howToReach: "Nearest railway: Shimoga (50 km). Bus: Services from Shimoga. Road: Recently connected via new bridge over Sharavathi River (previously accessible only by boat/launch services).",
       highlights: [
@@ -121,8 +131,10 @@ export const topPlacesToVisit = [
     tags: ["temples", "nature", "culture", "shopping"],
     category: "town",
     searchKeywords: ["gateway", "market", "estates", "shimoga"],
+    latitude: 14.1667,
+longitude: 75.0328,
     detail: {
-      location: "Shimoga District, Karnataka (14.1000° N, 75.2167° E)",
+      location: "Shimoga District, Karnataka ",
       bestTimeToVisit: "October to March (ideal weather)",
       howToReach: "Nearest railway: Shimoga (55 km). Bus: Regular services from Shimoga, Bangalore, and Mangalore. Road: Via NH44 and state highways.",
       highlights: [
@@ -144,6 +156,8 @@ export const topPlacesToVisit = [
     tags: ["temples", "culture", "shopping", "city"],
     category: "city",
     searchKeywords: ["ramakrishna", "cultural", "river", "gateway"],
+    latitude: 13.9299,
+longitude: 75.5681,
     detail: {
       location: "Shimoga District, Karnataka (13.9299° N, 75.5681° E)",
       bestTimeToVisit: "October to March (pleasant weather for sightseeing)",
@@ -167,6 +181,8 @@ export const topPlacesToVisit = [
     tags: ["trekking", "mountains", "wildlife", "adventure"],
     category: "trekking",
     searchKeywords: ["peak", "trek", "national park", "wildlife"],
+    latitude: 13.1326,
+longitude: 75.2528,
     detail: {
       location: "Chikmagalur & Dakshina Kannada Districts, Karnataka (13.3667° N, 75.6833° E)",
       bestTimeToVisit: "October to May (dry season ideal for trekking)",
@@ -190,6 +206,8 @@ export const topPlacesToVisit = [
     tags: ["temples", "spiritual", "meditation", "history"],
     category: "temple",
     searchKeywords: ["sharadamba", "vidyashankara", "spiritual", "tunga"],
+ latitude: 13.4197,
+longitude: 75.2526,
     detail: {
       location: "Chikmagalur District, Karnataka (13.3667° N, 75.5333° E)",
       bestTimeToVisit: "October to March (pleasant weather, ideal for spiritual visits)",
@@ -213,6 +231,8 @@ export const topPlacesToVisit = [
     tags: ["coffee", "trekking", "nature", "plantations"],
     category: "hill_station",
     searchKeywords: ["coffee", "estate", "mullayanagiri", "plantations"],
+    latitude: 13.3153,
+longitude: 75.7754,
     detail: {
       location: "Chikmagalur District, Karnataka (13.3167° N, 75.7667° E)",
       bestTimeToVisit: "October to March (cool weather and harvest season)",
@@ -236,6 +256,8 @@ export const topPlacesToVisit = [
     tags: ["trekking", "spiritual", "mountains", "adventure"],
     category: "mountain",
     searchKeywords: ["caves", "sufi", "coffee", "peak"],
+ latitude: 13.3377,
+longitude: 75.7216,
     detail: {
       location: "Chikmagalur District, Karnataka (13.4333° N, 75.7500° E)",
       bestTimeToVisit: "October to March (weather suitable for trekking and exploration)",
@@ -259,6 +281,8 @@ export const topPlacesToVisit = [
     tags: ["waterfalls", "trekking", "nature", "adventure"],
     category: "waterfall",
     searchKeywords: ["hidden", "cascade", "plantation", "chikmagalur"],
+    latitude: 13.5472,
+longitude: 75.7254,
     detail: {
       location: "Chikmagalur District, Karnataka (13.4000° N, 75.7500° E)",
       bestTimeToVisit: "June to September (monsoon for maximum water flow), September to November (scenic beauty)",
@@ -282,6 +306,9 @@ export const topPlacesToVisit = [
     tags: ["coffee", "nature", "adventure", "trekking", "plantations"],
     category: "hill_station",
     searchKeywords: ["coffee", "cardamom", "abbey falls", "monsoon"],
+    latitude: 12.4244,
+longitude: 75.7382,
+
     detail: {
       location: "Kodagu District, Karnataka (12.3381° N, 75.7304° E)",
       bestTimeToVisit: "September to April (cool weather, post-monsoon beauty ideal)",
@@ -305,6 +332,9 @@ export const topPlacesToVisit = [
     tags: ["trekking", "nature", "mountains", "gardens"],
     category: "hill_station",
     searchKeywords: ["viewpoint", "sunset", "z-point", "gardens"],
+    latitude: 13.5477,
+longitude: 75.7347,
+
     detail: {
       location: "Chikmagalur District, Karnataka (13.4033° N, 75.7333° E)",
       bestTimeToVisit: "October to March (ideal weather), June to September (monsoon beauty)",
@@ -328,6 +358,9 @@ export const topPlacesToVisit = [
     tags: ["trekking", "mountains", "adventure", "wildlife"],
     category: "mountain",
     searchKeywords: ["peak", "summit", "forest", "temple"],
+    latitude: 12.6769,
+longitude: 75.6844,
+
     detail: {
       location: "Chikmagalur District, Karnataka (13.3667° N, 75.8000° E)",
       bestTimeToVisit: "October to May (dry season ideal for trekking)",
