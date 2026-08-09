@@ -35,7 +35,7 @@ export default function MapSection({ places }: MapSectionProps) {
           <Typography variant="h3" className="font-bold text-orange-800 mb-4">
             Explore Malenaadu on the Map
           </Typography>
-          <Typography className="text-gray-600 max-w-2xl mx-auto">
+          <Typography className="text-gray-600  mx-auto">
             Discover the region visually with an interactive map powered by OpenStreetMap.
             Click any marker to view place details and start planning your journey.
           </Typography>

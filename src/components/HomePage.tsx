@@ -350,7 +350,7 @@ export default function HomePage() {
             </Box>
 
             <Typography
-              className="text-center mx-auto text-gray-700 text-lg max-w-3xl leading-relaxed"
+              className="text-center mx-auto text-gray-700 text-lg leading-relaxed"
             >
               Malenaadu is a comprehensive digital journey through the lush green landscapes,
               cascading waterfalls, pristine forests, and rich cultural heritage of the Malenadu region in
