@@ -20,12 +20,14 @@ import HomeIcon from "@mui/icons-material/Home";
 import PlaceIcon from "@mui/icons-material/Place";
 import ImageIcon from "@mui/icons-material/Image";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
+import RouteIcon from "@mui/icons-material/Route";
 import Link from "next/link";
 
 const navItems = [
   { label: "Home", icon: <HomeIcon /> },
   { label: "Places", icon: <PlaceIcon /> },
   { label: "Gallery", icon: <ImageIcon /> },
+  { label: "Plan Trip", icon: <RouteIcon />, href: "/trip-planner" },
   { label: "Contact", icon: <ContactMailIcon /> },
 ];
 
@@ -84,7 +86,7 @@ export default function Navbar() {
           >
             <ListItem 
               component={Link}
-              href={item.label === "Home" ? "/" : `/${item.label.toLowerCase()}`}
+              href={item.href ?? (item.label === "Home" ? "/" : `/${item.label.toLowerCase()}`)}
               button 
               sx={{
                 my: 1,
@@ -212,7 +214,7 @@ export default function Navbar() {
                 >
                   <Button
                     component={Link}
-                    href={item.label === "Home" ? "/" : `/${item.label.toLowerCase()}`}
+                    href={item.href ?? (item.label === "Home" ? "/" : `/${item.label.toLowerCase()}`)}
                     sx={{
                       color: "white",
                       fontWeight: "600",
