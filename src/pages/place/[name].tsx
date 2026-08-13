@@ -35,6 +35,8 @@ import ShareIcon from "@mui/icons-material/Share";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import WeatherCard from "@/components/WeatherCard";
 
+const DEFAULT_PLACE_IMAGE = "/imageForProject/place-placeholder.svg";
+
 export default function PlaceDetail() {
   const router = useRouter();
   const { name } = router.query;
@@ -75,7 +77,7 @@ const decodedName = decodeURIComponent(name as string);
   const touristSchema = touristAttractionSchema({
     name: place.name,
     description: place.description,
-    image: place.image,
+    image: place.image || DEFAULT_PLACE_IMAGE,
     location: detail.location,
     url: `https://www.malenaadu.in/place/${place.name}`,
   });
@@ -160,7 +162,7 @@ const decodedName = decodeURIComponent(name as string);
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://www.malenaadu.in/place/${place.name}`} />
-        <meta property="og:image" content={place.image} />
+        <meta property="og:image" content={place.image || DEFAULT_PLACE_IMAGE} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Box className="bg-gradient-to-b from-green-50 to-white min-h-screen">
@@ -191,7 +193,7 @@ const decodedName = decodeURIComponent(name as string);
         transition={{ duration: 0.8 }}
         className="relative h-[70vh] w-full bg-cover bg-center overflow-hidden"
         style={{
-          backgroundImage: `url('${place.image}')`,
+          backgroundImage: `url('${place.image || DEFAULT_PLACE_IMAGE}')`,
           backgroundAttachment: "fixed",
         }}
       >

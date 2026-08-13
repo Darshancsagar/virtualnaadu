@@ -11,7 +11,7 @@ longitude: 74.8058,
     detail: {
       location: "Shimoga District, Karnataka ",
       bestTimeToVisit: "June to October (monsoon season provides maximum water flow)",
-      howToReach: "Nearest railway station: Shimoga Junction (66 km). Bus: Regular services from Bangalore, Shimoga, and Mangalore. Road: Well-connected by NH highways.",
+      howToReach: "Talaguppa is the nearest railway station (about 20 km). Road access is available from Sagara and Shivamogga; check current public-transport schedules before travel.",
       highlights: [
         "One of the highest plunge waterfalls in India and highest in South India",
         "Four distinct cascades: Raja, Rani, Roarer, and Rocket falls",
@@ -256,10 +256,10 @@ longitude: 75.7754,
     tags: ["trekking", "spiritual", "mountains", "adventure"],
     category: "mountain",
     searchKeywords: ["caves", "sufi", "coffee", "peak"],
- latitude: 13.3377,
-longitude: 75.7216,
+    latitude: 13.4174,
+    longitude: 75.7655,
     detail: {
-      location: "Chikmagalur District, Karnataka (13.4333° N, 75.7500° E)",
+      location: "Chikkamagaluru District, Karnataka",
       bestTimeToVisit: "October to March (weather suitable for trekking and exploration)",
       howToReach: "Nearest town: Chikmagalur (30 km). Bus: Services from Chikmagalur and nearby towns. Road: Via Kemmanagundi or direct routes.",
       highlights: [
@@ -353,20 +353,20 @@ longitude: 75.7347,
   },
   {
     name: "Pushpagiri",
-    description: "A scenic mountain peak in Chikmagalur offering challenging treks and panoramic views.",
+    description: "A forested peak in northern Kodagu, known for a challenging trek and Western Ghats views.",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdW50YWluJTIwcGVha3xlbnwwfHwwfHx8MA%3D%3D",
     tags: ["trekking", "mountains", "adventure", "wildlife"],
     category: "mountain",
     searchKeywords: ["peak", "summit", "forest", "temple"],
-    latitude: 12.6769,
-longitude: 75.6844,
+    latitude: 12.6617,
+longitude: 75.6647,
 
     detail: {
-      location: "Chikmagalur District, Karnataka (13.3667° N, 75.8000° E)",
-      bestTimeToVisit: "October to May (dry season ideal for trekking)",
-      howToReach: "Nearest town: Chikmagalur (50 km). Base village: Sarpadhari. Bus and taxi services from Chikmagalur. Road: Via Mudigere.",
+      location: "Kodagu District, Karnataka",
+      bestTimeToVisit: "December to May is generally the drier trekking season; confirm forest access before travel.",
+      howToReach: "Base access is from the Somwarpet/Kumaralli side of Kodagu. Check current forest-entry and guide requirements before travelling.",
       highlights: [
-        "One of the highest peaks in Chikmagalur region",
+        "A prominent peak in northern Kodagu",
         "Dense tropical forests and rich biodiversity",
         "Ancient temple at the summit",
         "Challenging trek for experienced hikers"
@@ -375,6 +375,82 @@ longitude: 75.6844,
       accommodation: "Limited options; mostly homestays in nearby villages. Trekking groups often organize stays.",
       entryFee: "Free entry. Trekking guide charges: ₹500-1000",
       activities: "Trekking, rock climbing, forest trekking, meditation, photography, wildlife spotting, adventure activities"
+    }
+  },
+  {
+    name: "Mullayanagiri",
+    description: "Karnataka's highest peak, with a summit shrine, dramatic hill views, and trekking access near Chikkamagaluru.",
+    tags: ["trekking", "mountains", "nature", "sunset"],
+    category: "mountain",
+    searchKeywords: ["highest peak", "mullappa swamy", "seethalayyanagiri", "chikkamagaluru"],
+    latitude: 13.3906,
+    longitude: 75.7217,
+    detail: {
+      location: "Chikkamagaluru District, Karnataka",
+      bestTimeToVisit: "October to February for clearer weather; check access conditions during monsoon.",
+      howToReach: "About 16–24 km from Chikkamagaluru town depending on the access point. The final approach is narrow and may require a short walk.",
+      highlights: ["Karnataka's highest peak at about 1,930 metres", "Mullappa Swamy temple near the summit", "Western Ghats viewpoints and hill roads"],
+      attractions: "Mullayanagiri summit, Seethalayyanagiri, nearby coffee country and Chikkamagaluru town.",
+      accommodation: "Chikkamagaluru has hotels, homestays, and estate stays.",
+      entryFee: "Check current local access, parking, and trekking rules before departure.",
+      activities: "Sightseeing, short walks, trekking, sunrise or sunset viewing, and photography"
+    }
+  },
+  {
+    name: "Honnemaradu",
+    description: "A quiet adventure destination on the Sharavathi backwaters near Linganamakki Reservoir, known for supervised water activities.",
+    tags: ["nature", "adventure", "riverside", "waterfalls"],
+    category: "adventure",
+    searchKeywords: ["sharavathi", "linganamakki", "kayaking", "canoeing", "sagara"],
+    latitude: 14.1742,
+    longitude: 74.8374,
+    detail: {
+      location: "Sagara Taluk, Shivamogga District, Karnataka",
+      bestTimeToVisit: "August to January, subject to weather and operator availability.",
+      howToReach: "Around 25 km from Sagara by road. Confirm the camp meeting point with a registered operator before leaving.",
+      highlights: ["Sharavathi River backwaters near Linganamakki", "Kayaking, canoeing, coracle paddling and supervised swimming", "Forest and reservoir views"],
+      attractions: "Honnemaradu Adventure Camp, Linganamakki backwaters, Jog Falls, and Sharavathi Valley Wildlife Sanctuary.",
+      accommodation: "Book a registered camp or stay in the Sagara/Jog Falls area.",
+      entryFee: "Activity charges and availability are set by operators; book or confirm in advance.",
+      activities: "Kayaking, canoeing, coracle rides, birdwatching, and nature walks"
+    }
+  },
+  {
+    name: "Kodachadri",
+    description: "A Western Ghats peak in Shivamogga district, combining forest trekking, expansive views, and the Sarvajna Peetha shrine.",
+    tags: ["trekking", "mountains", "nature", "spiritual"],
+    category: "mountain",
+    searchKeywords: ["mookambika", "sarvajna peetha", "hidlumane", "kollur"],
+    latitude: 13.8613,
+    longitude: 74.8639,
+    detail: {
+      location: "Shivamogga District, Karnataka",
+      bestTimeToVisit: "October to February for clearer visibility. Monsoon trails and roads can be hazardous.",
+      howToReach: "Access is generally via the Nittur/Kollur side. Confirm current forest, jeep, and trekking access before travel.",
+      highlights: ["Peak around 1,343 metres", "Sarvajna Peetha at the summit", "Mookambika Wildlife Sanctuary landscapes"],
+      attractions: "Kodachadri Peak, Hidlumane Falls, Sarvajna Peetha, and Kollur Mookambika Temple.",
+      accommodation: "Stay options are available around Kollur and nearby towns.",
+      entryFee: "Access rules and vehicle charges can change; verify locally before visiting.",
+      activities: "Trekking, jeep access where permitted, viewpoints, and pilgrimage visits"
+    }
+  },
+  {
+    name: "Sakrebyle Elephant Camp",
+    description: "A Karnataka Forest Department elephant camp on the Tunga River, near Shivamogga.",
+    tags: ["wildlife", "nature", "family", "riverside"],
+    category: "wildlife",
+    searchKeywords: ["sakrebyle", "elephant camp", "tunga", "gajanur", "shivamogga"],
+    latitude: 13.9922,
+    longitude: 75.5662,
+    detail: {
+      location: "Near Gajanur, Shivamogga District, Karnataka",
+      bestTimeToVisit: "Morning visitor hours; confirm the current schedule before travelling.",
+      howToReach: "About 14 km from Shivamogga on the Shivamogga–Thirthahalli road.",
+      highlights: ["Forest Department-managed elephant camp", "Tunga River setting", "Morning elephant care and observation sessions"],
+      attractions: "The elephant camp, Tunga riverside, and nearby Shivamogga attractions.",
+      accommodation: "Stay in Shivamogga or check official eco-tourism accommodation availability.",
+      entryFee: "Timings, visitor activities, and fees can change; confirm with the Forest Department or official tourism listing.",
+      activities: "Wildlife observation, nature photography, and learning about elephant care"
     }
   }
 ];

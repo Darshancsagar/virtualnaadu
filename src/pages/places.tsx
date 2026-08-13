@@ -11,6 +11,8 @@ import Link from "next/link";
 import { collectionPageSchema, breadcrumbSchema } from "@/utils/schemas";
 import ClearIcon from "@mui/icons-material/Clear";
 
+const DEFAULT_PLACE_IMAGE = "/imageForProject/place-placeholder.svg";
+
 export default function Places() {
   const router = useRouter();
   const { search, tag } = router.query;
@@ -222,8 +224,9 @@ export default function Places() {
                     <Box className="relative h-48 overflow-hidden group">
                       <CardMedia
                         component="img"
-                        image={place.image}
+                        image={place.image || DEFAULT_PLACE_IMAGE}
                         alt={`${place.name} - Tourist Place in Malenadu`}
+                        onError={(event) => { event.currentTarget.src = DEFAULT_PLACE_IMAGE; }}
                         sx={{
                           height: "100%",
                           width: "100%",

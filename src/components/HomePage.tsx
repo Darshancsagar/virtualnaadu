@@ -28,6 +28,8 @@ import LandscapeIcon from "@mui/icons-material/Landscape";
 import ImageIcon from "@mui/icons-material/Image";
 import SearchIcon from "@mui/icons-material/Search";
 
+const DEFAULT_PLACE_IMAGE = "/imageForProject/place-placeholder.svg";
+
 const MapSection = dynamic(() => import("@/components/MapSection"), {
   ssr: false,
   loading: () => (
@@ -410,8 +412,9 @@ export default function HomePage() {
                     <Box className="relative h-48 overflow-hidden group">
                       <CardMedia
                         component="img"
-                        image={place.image}
+                        image={place.image || DEFAULT_PLACE_IMAGE}
                         alt={`Place ${place.name}`}
+                        onError={(event) => { event.currentTarget.src = DEFAULT_PLACE_IMAGE; }}
                         sx={{
                           height: "100%",
                           width: "100%",

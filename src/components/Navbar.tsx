@@ -62,7 +62,7 @@ export default function Navbar() {
           >
             🌿 Malenaadu
           </Typography>
-          <Box sx={{ backgroundColor: "rgba(255, 255, 255, 0.2)", px: 1.2, py: 0.5, borderRadius: 1, backdropFilter: "blur(10px)" }}>
+          <Box sx={{ backgroundColor: "rgba(255, 255, 255, 0.2)", px: 0.5, py: 0.2, borderRadius: 1, backdropFilter: "blur(10px)" }}>
             <Typography sx={{ fontSize: "10px", fontWeight: "600", color: "#FFB74D", textTransform: "uppercase", letterSpacing: "0.5px" }}>
               ✨ AI Powered
             </Typography>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Malenadu destination</title>
+  <desc id="desc">A scenic illustrated placeholder for a Malenadu tourist destination.</desc>
+  <defs><linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#7bc6cc"/><stop offset="1" stop-color="#e5f5dd"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <path d="M0 540 260 270l185 185 170-250 315 335 130-115 220 195v180H0Z" fill="#2f6b4f"/>
+  <path d="M0 635 280 405l175 150 205-175 265 255 115-85 160 110v140H0Z" fill="#174f3e"/>
+  <circle cx="960" cy="155" r="70" fill="#ffe29a" opacity=".95"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#fff">MALENADU</text>
+</svg>
