@@ -9,7 +9,7 @@ export const topPlacesToVisit = [
     latitude: 14.2294,
 longitude: 74.8058,
     detail: {
-      location: "Shimoga District, Karnataka ",
+      location: "Shivamogga District, Karnataka",
       bestTimeToVisit: "June to October (monsoon season provides maximum water flow)",
       howToReach: "Talaguppa is the nearest railway station (about 20 km). Road access is available from Sagara and Shivamogga; check current public-transport schedules before travel.",
       highlights: [
@@ -18,10 +18,10 @@ longitude: 74.8058,
         "Scenic viewpoints and adventure activities",
         "Trekking trails around the falls"
       ],
-      attractions: "Adventure activities include rock climbing, rappelling, and water sports during monsoon. Temple at the base with religious significance.",
+      attractions: "Viewpoints, the Sharavathi River cascades, and nearby Linganamakki Reservoir scenery.",
       accommodation: "Available in nearby Jog town and Shimoga city. Options range from budget hotels to homestays.",
-      entryFee: "Free entry, parking charges applicable",
-      activities: "Photography, swimming in pools, trekking, bird watching, picnicking"
+      entryFee: "Check current viewpoint, parking, and activity charges before travel.",
+      activities: "Photography, viewpoint walks, birdwatching, and picnicking in designated public areas"
     }
   },
   {
@@ -34,7 +34,7 @@ longitude: 74.8058,
     latitude: 13.5092,
 longitude: 75.0903,
     detail: {
-      location: "Shimoga District, Karnataka",
+      location: "Shivamogga District, Karnataka",
       bestTimeToVisit: "June to September (monsoon season brings scenic beauty and lush greenery)",
       howToReach: "Nearest railway: Shimoga (50 km). Bus: Services from Bangalore, Mangalore, and Shimoga. Road: Via Thirthahalli or Tarikere routes.",
       highlights: [
@@ -45,7 +45,7 @@ longitude: 75.0903,
       ],
       attractions: "Agumbe Waterfall, ancient temple, viewpoint overlooking the Arabian Sea horizon, trekking trails through rainforests.",
       accommodation: "Limited options including nature resorts and homestays focused on sustainable tourism.",
-      entryFee: "No entry fee for the village, some attractions may have nominal charges",
+      entryFee: "Village access is generally open; confirm charges for specific attractions before travel.",
       activities: "Sunset viewing, rainforest walks, birdwatching, photography, exploring tribal villages, coffee plantation tours"
     }
   },
@@ -59,7 +59,7 @@ longitude: 75.0903,
     latitude: 14.1352,
 longitude: 75.0226,
     detail: {
-      location: "Shimoga District, Karnataka ",
+      location: "Shivamogga District, Karnataka",
       bestTimeToVisit: "October to March (pleasant weather for temple visits)",
       howToReach: "Nearest railway: Shimoga (45 km). Bus: Regular services from Shimoga and nearby towns. Road: Well-connected via state highways.",
       highlights: [
@@ -70,7 +70,7 @@ longitude: 75.0226,
       ],
       attractions: "Ancient temple exploration, architectural photography, sacred temple rituals, riverside walks, local markets, cultural experiences, historical site visits.",
       accommodation: "Options in nearby Shimoga city. Budget hotels and guest houses available.",
-      entryFee: "Free entry to temple, donations welcome",
+      entryFee: "Temple practices and any visitor charges should be confirmed locally.",
       activities: "Temple darshan, photography, cultural tourism, meditation, spiritual visits, exploring local villages, historical exploration"
     }
   },
@@ -84,7 +84,7 @@ longitude: 75.0226,
     latitude: 14.1164,
 longitude: 74.9816,
     detail: {
-      location: "Shimoga District, Karnataka ",
+      location: "Shivamogga District, Karnataka",
       bestTimeToVisit: "October to May (cool weather, ideal for trekking)",
       howToReach: "Nearest railway: Shimoga (60 km). Bus: Services from Shimoga and nearby towns. Road: Via Thirthahalli or scenic ghat roads.",
       highlights: [
@@ -95,8 +95,8 @@ longitude: 74.9816,
       ],
       attractions: "Trekking trails, village exploration, nature walks, bird watching, photography, viewpoints, local hospitality experiences.",
       accommodation: "Limited homestays and budget options in village. Best to base in nearby Shimoga.",
-      entryFee: "Free entry to village and trekking areas",
-      activities: "Trekking, nature walks, photography, bird watching, village tourism, peaceful retreats, camping"
+      entryFee: "Confirm access and any local trekking requirements before travel.",
+      activities: "Temple visits, village walks, photography, and quiet nature observation"
     }
   },
   {
@@ -109,7 +109,7 @@ longitude: 74.9816,
     latitude: 14.1949,
 longitude: 74.8478,
     detail: {
-      location: "Shimoga District, Karnataka ",
+      location: "Shivamogga District, Karnataka",
       bestTimeToVisit: "October to March (pleasant weather for temple visits and riverside exploration)",
       howToReach: "Nearest railway: Shimoga (50 km). Bus: Services from Shimoga. Road: Recently connected via new bridge over Sharavathi River (previously accessible only by boat/launch services).",
       highlights: [
@@ -120,7 +120,7 @@ longitude: 74.8478,
       ],
       attractions: "Ancient temple exploration, riverside walks, Sharavathi River views, archaeological site visits, nature photography, local cultural experiences, sacred bathing spots.",
       accommodation: "Basic homestays and guest houses available. Best accommodation in nearby Shimoga city (50 km).",
-      entryFee: "Free entry to village and temples, donations welcome",
+      entryFee: "Confirm ferry, temple, and vehicle charges locally before travel.",
       activities: "Temple visits, riverside walks, photography, cultural tourism, meditation, exploring historical sites, river watching, nature appreciation"
     }
   },
@@ -134,7 +134,7 @@ longitude: 74.8478,
     latitude: 14.1667,
 longitude: 75.0328,
     detail: {
-      location: "Shimoga District, Karnataka ",
+      location: "Shivamogga District, Karnataka",
       bestTimeToVisit: "October to March (ideal weather)",
       howToReach: "Nearest railway: Shimoga (55 km). Bus: Regular services from Shimoga, Bangalore, and Mangalore. Road: Via NH44 and state highways.",
       highlights: [
@@ -145,7 +145,7 @@ longitude: 75.0328,
       ],
       attractions: "Local temples, coffee estate tours, market exploration, nature walks, nearby waterfall visits, cultural centers, photography spots.",
       accommodation: "Budget hotels and guest houses available. Good base for exploring nearby attractions.",
-      entryFee: "Most areas free, some temples have donations",
+      entryFee: "Confirm charges for individual attractions and transport before travel.",
       activities: "Temple visits, estate tours, local shopping, nature walks, photography, cultural tourism, market exploration"
     }
   },
@@ -159,7 +159,7 @@ longitude: 75.0328,
     latitude: 13.9299,
 longitude: 75.5681,
     detail: {
-      location: "Shimoga District, Karnataka (13.9299° N, 75.5681° E)",
+      location: "Shivamogga District, Karnataka",
       bestTimeToVisit: "October to March (pleasant weather for sightseeing)",
       howToReach: "Railway: Shimoga Junction is a major station. Bus: KSRTC and private services from Bangalore, Mangalore, and other cities. Road: Well-connected by NH highways.",
       highlights: [
@@ -170,7 +170,7 @@ longitude: 75.5681,
       ],
       attractions: "Ramakrishna Temple, Jnanapeeth, temples along river banks, local markets, spice markets, cultural centers.",
       accommodation: "Wide range from budget hotels to mid-range accommodations. Good connectivity to major cities.",
-      entryFee: "Free entry to temples and public spaces",
+      entryFee: "Confirm charges for individual attractions before travel.",
       activities: "Temple visits, cultural tourism, shopping, river walks, local cuisine tasting, photography"
     }
   },
@@ -184,7 +184,7 @@ longitude: 75.5681,
     latitude: 13.1326,
 longitude: 75.2528,
     detail: {
-      location: "Chikmagalur & Dakshina Kannada Districts, Karnataka (13.3667° N, 75.6833° E)",
+      location: "Kudremukh National Park spans Chikkamagaluru and Dakshina Kannada districts, Karnataka",
       bestTimeToVisit: "October to May (dry season ideal for trekking)",
       howToReach: "Nearest railway: Chikmagalur (35 km). Bus: Services from Bangalore and Mangalore. Road: Via Tarikere-Chikmagalur highway.",
       highlights: [
@@ -195,8 +195,8 @@ longitude: 75.2528,
       ],
       attractions: "Kudremukh National Park, hiking trails of varying difficulty, picturesque valleys, streams and waterfalls, viewpoints.",
       accommodation: "Options in Tarikere, Chikmagalur town, or homestays near trekking routes.",
-      entryFee: "National Park entry fee: ₹50-100 per person. Trekking permits required.",
-      activities: "Trekking, rock climbing, birdwatching, wildlife photography, valley exploration, stream crossing"
+      entryFee: "Trekking requires permission; confirm current permits, quotas, and fees with the Forest Department before travel.",
+      activities: "Permitted day trekking, birdwatching, wildlife photography, and guided nature observation"
     }
   },
   {
@@ -209,7 +209,7 @@ longitude: 75.2528,
  latitude: 13.4197,
 longitude: 75.2526,
     detail: {
-      location: "Chikmagalur District, Karnataka (13.3667° N, 75.5333° E)",
+      location: "Chikkamagaluru District, Karnataka",
       bestTimeToVisit: "October to March (pleasant weather, ideal for spiritual visits)",
       howToReach: "Nearest railway: Chikmagalur (40 km). Bus: Regular services from Bangalore, Chikmagalur, and Shimoga. Road: Well-connected.",
       highlights: [
@@ -220,7 +220,7 @@ longitude: 75.2526,
       ],
       attractions: "Sharadamba Temple for Devi Darshan, Vidyashankara Temple, riverside ghats, sacred forests, meditation spots, yoga centers.",
       accommodation: "Temple guesthouses, ashram stays, and nearby hotels. Many offer budget-friendly options for pilgrims.",
-      entryFee: "Free entry to temples, donations welcome",
+      entryFee: "Temple practices and any visitor charges should be confirmed locally.",
       activities: "Temple darshan, meditation, yoga, river bathing, spiritual discourse, pilgrimage, photography"
     }
   },
@@ -234,7 +234,7 @@ longitude: 75.2526,
     latitude: 13.3153,
 longitude: 75.7754,
     detail: {
-      location: "Chikmagalur District, Karnataka (13.3167° N, 75.7667° E)",
+      location: "Chikkamagaluru District, Karnataka",
       bestTimeToVisit: "October to March (cool weather and harvest season)",
       howToReach: "Nearest railway: Tarikere (35 km). Bus: Regular Volvo and ordinary services from Bangalore, Mangalore, and Hassan. Road distance from Bangalore: 230 km.",
       highlights: [
@@ -245,7 +245,7 @@ longitude: 75.7754,
       ],
       attractions: "Coffee estate tours, Mullayanagiri trek, Baba Budangiri peak, Hebbe Falls, local markets, spice gardens, viewpoints at various estates.",
       accommodation: "Wide range from coffee plantations homestays to luxury resorts. Estate stays offer immersive experience.",
-      entryFee: "Most areas free. Coffee estate tours: ₹200-500. Trek permits: ₹50-100",
+      entryFee: "Estate tours, attractions, and treks are independently operated; confirm current charges before booking.",
       activities: "Coffee plantation tours, peak treks, breakfast at viewpoints, paragliding, trekking, bird watching, photography"
     }
   },
@@ -270,7 +270,7 @@ longitude: 75.7754,
       ],
       attractions: "Ancient caves with religious significance, meditation points, trekking paths, viewpoints, nearby coffee plantations, historical sites.",
       accommodation: "Limited options in nearby Chikmagalur. Nearby homestays and resorts available.",
-      entryFee: "Free entry to caves and mountain",
+      entryFee: "Confirm local access, parking, and any trekking restrictions before travel.",
       activities: "Cave exploration, meditation, trekking, photography, spiritual pursuits, adventure activities"
     }
   },
@@ -284,7 +284,7 @@ longitude: 75.7754,
     latitude: 13.5472,
 longitude: 75.7254,
     detail: {
-      location: "Chikmagalur District, Karnataka (13.4000° N, 75.7500° E)",
+      location: "Chikkamagaluru District, Karnataka",
       bestTimeToVisit: "June to September (monsoon for maximum water flow), September to November (scenic beauty)",
       howToReach: "Nearest town: Chikmagalur (20 km). Bus: Services from Chikmagalur. Road: Via Kemmanagundi. Trek: 3 km hike through coffee estates required.",
       highlights: [
@@ -295,8 +295,8 @@ longitude: 75.7254,
       ],
       attractions: "Waterfall pool for bathing, picnic spots, surrounding plantations, trekking trail through coffee estates, photography points.",
       accommodation: "Best based in Chikmagalur town or Kemmanagundi. Plantation homestays also available.",
-      entryFee: "Free entry, nominal guide charges for trek: ₹50-100",
-      activities: "Trekking, waterfall bathing, picnicking, photography, coffee plantation exploration, bird watching"
+      entryFee: "Confirm current vehicle, guide, and access charges before travel.",
+      activities: "Waterfall viewing, permitted walks, photography, and coffee-country sightseeing"
     }
   },
   {
@@ -310,7 +310,7 @@ longitude: 75.7254,
 longitude: 75.7382,
 
     detail: {
-      location: "Kodagu District, Karnataka (12.3381° N, 75.7304° E)",
+      location: "Kodagu District, Karnataka",
       bestTimeToVisit: "September to April (cool weather, post-monsoon beauty ideal)",
       howToReach: "Nearest railway: Mysore (130 km). Bus: Volvo services from Bangalore (260 km), Mysore, and Mangalore. Road: Well-connected via NH44 and other highways.",
       highlights: [
@@ -321,7 +321,7 @@ longitude: 75.7382,
       ],
       attractions: "Abbey Falls, Iruppu Falls, Namdroling Monastery (Golden Temple), Raja's Seat viewpoint, Brahmagiri peak, coffee estate tours, spice plantations.",
       accommodation: "Wide range from plantation homestays to luxury resorts. Estate stays are highly recommended for authentic experience.",
-      entryFee: "Most areas free. Abbey Falls: ₹20-50. Trek permits: ₹50-150",
+      entryFee: "Attraction and trekking charges vary; confirm current fees with the operator or local authority.",
       activities: "Coffee plantation tours, trekking, waterfall visits, paragliding, rock climbing, mandarin picking, nature walks, photography"
     }
   },
@@ -336,7 +336,7 @@ longitude: 75.7382,
 longitude: 75.7347,
 
     detail: {
-      location: "Chikmagalur District, Karnataka (13.4033° N, 75.7333° E)",
+      location: "Chikkamagaluru District, Karnataka",
       bestTimeToVisit: "October to March (ideal weather), June to September (monsoon beauty)",
       howToReach: "Nearest town: Chikmagalur (35 km). Bus: Services from Chikmagalur and Bangalore. Road: Via winding ghat roads with scenic views.",
       highlights: [
@@ -347,7 +347,7 @@ longitude: 75.7347,
       ],
       attractions: "Natural gardens, viewpoints, rock formations, Hebbe Falls nearby, trekking trails, Raja Seat-like vantage points, photography spots.",
       accommodation: "Hill station resorts, hotels, and homestays. Some offer cottage-style accommodations.",
-      entryFee: "Free entry to gardens and viewpoints. Parking: ₹50",
+      entryFee: "Confirm current garden, parking, and vehicle charges before travel.",
       activities: "Sightseeing, trekking, rock climbing, camping, picnicking, photography, sunrise/sunset viewing, nature walks"
     }
   },
@@ -373,7 +373,7 @@ longitude: 75.6647,
       ],
       attractions: "Peak trekking, forest exploration, temple visit, panoramic viewpoints, wildlife spotting, photography opportunities.",
       accommodation: "Limited options; mostly homestays in nearby villages. Trekking groups often organize stays.",
-      entryFee: "Free entry. Trekking guide charges: ₹500-1000",
+      entryFee: "Forest access and trekking rules can change; confirm locally before travel.",
       activities: "Trekking, rock climbing, forest trekking, meditation, photography, wildlife spotting, adventure activities"
     }
   },
