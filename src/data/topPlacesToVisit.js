@@ -452,5 +452,100 @@ longitude: 75.6647,
       entryFee: "Timings, visitor activities, and fees can change; confirm with the Forest Department or official tourism listing.",
       activities: "Wildlife observation, nature photography, and learning about elephant care"
     }
+  },
+  {
+    name: "Kavaledurga Fort",
+    description: "A forested hill fort near Thirthahalli, with Keladi Nayaka-era remains, temples, and wide Sahyadri views.",
+    tags: ["history", "trekking", "architecture", "nature"],
+    category: "heritage",
+    searchKeywords: ["kavaledurga", "bhuvanagiri", "keladi", "thirthahalli", "fort"],
+    latitude: 13.7188,
+    longitude: 75.1220,
+    detail: {
+      location: "Near Thirthahalli, Shivamogga District, Karnataka",
+      bestTimeToVisit: "October to February; avoid wet trails during heavy rain.",
+      howToReach: "Reach the fort area by road from Thirthahalli. The summit requires a trek; carry water and start early.",
+      highlights: ["Hilltop fortification and heritage structures", "Temple and palace remains", "Forest and Western Ghats viewpoints"],
+      attractions: "Kavaledurga Fort, nearby Agumbe, Kundadri Hill, and Kuppalli.",
+      accommodation: "Stay options are available in Thirthahalli and nearby homestays.",
+      entryFee: "Confirm current entry hours, access rules, and charges before travel.",
+      activities: "Heritage walk, hiking, photography, and scenic viewpoints"
+    }
+  },
+  {
+    name: "Horanadu",
+    description: "A Malnad pilgrimage village known for Sri Annapoorneshwari Temple amid the evergreen hills near Kalasa.",
+    tags: ["temples", "spiritual", "nature", "culture"],
+    category: "temple",
+    searchKeywords: ["annapoorna", "kalasa", "bhadra", "pilgrimage", "malnad"],
+    latitude: 13.2705,
+    longitude: 75.3414,
+    detail: {
+      location: "Chikkamagaluru District, Karnataka",
+      bestTimeToVisit: "October to February for pleasant travel; expect rain during monsoon.",
+      howToReach: "Horanadu is about 10 km from Kalasa. Road travel is the usual approach; verify public-transport timings before travel.",
+      highlights: ["Sri Annapoorneshwari Temple", "Bhadra River setting", "Evergreen Malnad landscape"],
+      attractions: "Annapoorneshwari Temple, Kalasa, Kudremukh region, and nearby hill roads.",
+      accommodation: "Temple and local stay options may be available; confirm directly before travel.",
+      entryFee: "Confirm temple visiting arrangements and any current requirements before travel.",
+      activities: "Temple visit, local culture, and scenic drives"
+    }
+  },
+  {
+    name: "Muthodi Forest Camp",
+    description: "An eco-tourism base in the Bhadra Tiger Reserve, known for forest stays and wildlife-focused experiences.",
+    tags: ["wildlife", "nature", "forest", "adventure"],
+    category: "wildlife",
+    searchKeywords: ["bhadra", "tiger reserve", "safari", "forest camp", "chikkamagaluru"],
+    latitude: 13.4356,
+    longitude: 75.6425,
+    detail: {
+      location: "Bhadra Tiger Reserve, Chikkamagaluru District, Karnataka",
+      bestTimeToVisit: "October to May; check seasonal closure and safari availability before booking.",
+      howToReach: "Muthodi is about 32 km from Chikkamagaluru. Arrange access and accommodation through official or registered operators.",
+      highlights: ["Bhadra Tiger Reserve landscape", "Forest Department nature camp", "Wildlife and birdwatching opportunities"],
+      attractions: "Muthodi camp, Bhadra Wildlife Sanctuary, and Chikkamagaluru coffee country.",
+      accommodation: "Forest camp accommodation is subject to availability and advance booking.",
+      entryFee: "Safari, entry, and accommodation rules change; confirm through the official operator before travel.",
+      activities: "Permitted safari experiences, birdwatching, and guided nature observation"
+    }
+  },
+  {
+    name: "Abbey Falls",
+    description: "A popular waterfall near Madikeri, reached through the green coffee and cardamom country of Kodagu.",
+    tags: ["waterfalls", "nature", "coffee", "photography"],
+    category: "waterfall",
+    searchKeywords: ["abbi falls", "madikeri", "coorg", "coffee estate", "kodagu"],
+    latitude: 12.3824,
+    longitude: 75.7586,
+    detail: {
+      location: "Near Madikeri, Kodagu District, Karnataka",
+      bestTimeToVisit: "Post-monsoon for strong flow; use caution during heavy rain.",
+      howToReach: "Abbey Falls is about 9 km from Madikeri and is reached by road followed by the public visitor path.",
+      highlights: ["Waterfall amid coffee and cardamom estates", "Forest greenery", "Close proximity to Madikeri"],
+      attractions: "Abbey Falls, Madikeri town, Raja's Seat, and nearby coffee estates.",
+      accommodation: "Madikeri offers a broad range of hotels and homestays.",
+      entryFee: "Confirm current entry, parking, and opening arrangements before travel.",
+      activities: "Waterfall viewing, photography, and coffee-country sightseeing"
+    }
+  },
+  {
+    name: "Mandalpatti Viewpoint",
+    description: "A highland viewpoint in Kodagu, overlooking grasslands and the Pushpagiri forest landscape.",
+    tags: ["viewpoint", "mountains", "nature", "adventure"],
+    category: "viewpoint",
+    searchKeywords: ["mandalpatti", "pushpagiri", "madikeri", "jeep", "viewpoint"],
+    latitude: 12.4580,
+    longitude: 75.7310,
+    detail: {
+      location: "Kodagu District, Karnataka",
+      bestTimeToVisit: "October to February for visibility; weather and road access can change quickly.",
+      howToReach: "Access is commonly from the Madikeri side. Confirm the approved vehicle route and conditions before departure.",
+      highlights: ["Grassland and valley views", "Views towards Pushpagiri forests", "Popular highland photography point"],
+      attractions: "Mandalpatti, Madikeri, Abbey Falls, and Kodagu coffee country.",
+      accommodation: "Stay in Madikeri or nearby Kodagu homestays.",
+      entryFee: "Vehicle access, permits, and charges can change; confirm locally before travel.",
+      activities: "Scenic drives where permitted, viewpoints, and photography"
+    }
   }
 ];

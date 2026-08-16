@@ -77,8 +77,7 @@ export default function HomePage() {
         transition={{ duration: 1 }}
         className="relative h-[90vh] flex items-center justify-center text-center bg-cover bg-center overflow-hidden"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1530973954043-dc7f4d22117c?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          backgroundImage: "url('/imageForProject/malenaadu-hero.png')",
         }}
       >
         {/* Animated Overlay */}
