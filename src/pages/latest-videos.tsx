@@ -129,91 +129,17 @@ export default function LatestVideos() {
                 whileHover={{
                   y: -10,
                 }}
-              >
-                {/* <Card
-                  sx={{
-                    overflow: "hidden",
-                    borderRadius: 4,
-                    height: "100%",
-                    transition: ".3s",
-                    boxShadow:
-                      "0 10px 25px rgba(0,0,0,.08)",
-
-                    "&:hover": {
-                      boxShadow:
-                        "0 20px 40px rgba(0,0,0,.18)",
-                    },
-                  }}
-                >
-                  <Box
-                    sx={{
-                      position: "relative",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      image={video.snippet.thumbnails.high.url}
-                      height="220"
-                      alt={video.snippet.title}
-                    />
-
-                    <Box
-                      sx={{
-                        position: "absolute",
-                        inset: 0,
-                        bgcolor: "rgba(0,0,0,.25)",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PlayCircleFilledRoundedIcon
-                        sx={{
-                          fontSize: 70,
-                          color: "#fff",
-                        }}
-                      />
-                    </Box>
-                  </Box>
-
-                  <CardContent>
-                    <Typography
-                      variant="h6"
-                      fontWeight={700}
-                      gutterBottom
-                    >
-                      {video.snippet.title}
-                    </Typography>
-
-                    <Typography
-                      variant="body2"
-                      color="text.secondary"
-                    >
-                      {new Date(
-                        video.snippet.publishedAt
-                      ).toLocaleDateString()}
-                    </Typography>
-
-                    <Button
-                      fullWidth
-                      variant="contained"
-                      startIcon={<YouTubeIcon />}
-                      href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-                      target="_blank"
-                      sx={{
-                        mt: 3,
-                        bgcolor: "#FF0000",
-                        borderRadius: "999px",
-
-                        "&:hover": {
-                          bgcolor: "#D50000",
-                        },
-                      }}
-                    >
-                      Watch on YouTube
-                    </Button>
-                  </CardContent>
-                </Card> */}
+              ><Box
+  component="a"
+  href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  sx={{
+    textDecoration: "none",
+    color: "inherit",
+    display: "block",
+  }}
+>
                 <Card
   sx={{
     height: "100%",
@@ -357,6 +283,7 @@ export default function LatestVideos() {
     </Button>
   </CardContent>
 </Card>
+</Box>
               </motion.div>
             </Grid>
           ))}
