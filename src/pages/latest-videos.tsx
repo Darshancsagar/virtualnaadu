@@ -64,6 +64,33 @@ export default function LatestVideos() {
       </Box>
     );
 
+  if (!loading && videos.length === 0) {
+  return (
+    <Box
+      sx={{
+        py: 10,
+        textAlign: "center",
+      }}
+    >
+      <Typography variant="h5" fontWeight={600} gutterBottom>
+        😔 Unable to load videos
+      </Typography>
+
+      <Typography color="text.secondary">
+        Something went wrong. Please try again later.
+      </Typography>
+
+      <Button
+        variant="contained"
+        sx={{ mt: 3 }}
+        onClick={() => window.location.reload()}
+      >
+        Retry
+      </Button>
+    </Box>
+  );
+}
+ 
   return (
     <Box
       sx={{
