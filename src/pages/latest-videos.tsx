@@ -24,6 +24,7 @@ interface YoutubeVideo {
   snippet: {
     title: string;
     publishedAt: string;
+    description:string;
 
     thumbnails: {
       high: {
@@ -301,7 +302,7 @@ export default function LatestVideos() {
         mb: 3,
       }}
     >
-      {video.snippet.description || "Watch this amazing Malenaadu travel story on our YouTube channel."}
+      {video?.snippet?.description || "Watch this amazing Malenaadu travel story on our YouTube channel."}
     </Typography>
 
     {/* Button */}
