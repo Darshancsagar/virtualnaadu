@@ -21,6 +21,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import ImageIcon from "@mui/icons-material/Image";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import RouteIcon from "@mui/icons-material/Route";
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import Link from "next/link";
 
 const navItems = [
@@ -28,6 +29,7 @@ const navItems = [
   { label: "Places", icon: <PlaceIcon /> },
   { label: "Gallery", icon: <ImageIcon /> },
   { label: "Plan Trip", icon: <RouteIcon />, href: "/trip-planner" },
+  { label: "Latest Videos", icon: <YouTubeIcon />, href: "/latest-videos" },
   { label: "Contact", icon: <ContactMailIcon /> },
 ];
 
